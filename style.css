@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: red;
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    background-color: rosybrown;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    background-color: royalblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    width: 30%;
+    height: 50px;
+}
+/*Dark es una clase usada por JavaScript que SOLO se ejecuta cuando se hace click en el boton. La forma de especificar el elemento a cambiar sera:
+
+.dark .la-clase-a-cambiar elemento{
+    las propiedades
+}
+*/
+.dark *{
+    transition: 500ms;
+}
+.dark{
+    background-color: #1d2029;
+}
+.dark h2{
+    color: white;
+}
+.dark #text{
+    color: white;
+    font-size: 25px;
+}
+.dark .container{
+    background-color: indianred;
+}
+.dark .box{
+    background-color: gold;
+}
+.dark .box span{
+    color: indigo;
+    font-size: 35px;
+    font-weight: 700;
+}
+.dark .button{
+    background-color: darkgreen;
+}
+.dark .button button{
+    background-color: darkmagenta;
+    color: white;
+    font-size: 20px;
+
+}
